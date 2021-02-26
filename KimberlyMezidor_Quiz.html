@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <title>Common Meals Quiz</title>
+
+  	<script>
+
+  		var myFirstVariable = 8;
+
+  		function button1() {
+
+  			html = "<p>Eggs are a common breakfast, but I commonly think of pancakes first:</p><img src='pancakes.jpg' class='imgSize'>";
+
+  			document.getElementById("content").innerHTML = html;
+
+  		}
+
+
+  		function button2() {
+
+  			html = "<p>Fun Fact, this is a vegan pizza:</p><img src='pizza.jpg'>";
+  			
+  			document.getElementById("content").innerHTML = html;
+
+  		}
+
+  		function button3() {
+
+  			html = "<p>Soup is cozy:</p><img src='soup.jpg'>";
+
+  			document.getElementById("content").innerHTML = html;
+
+  		}
+
+  		
+
+
+  	</script> 
+
+  	<style>
+  		.assessment {
+  			background: orange;
+  		}
+  		#content {
+  			background: pink;
+  		}
+
+  		.imgSize {
+  			width: 50%;
+  			height: 50%;
+  		}
+
+  	</style>
+
+  </head>
+
+  <body>
+
+  	<h1>Common Meals Quiz</h1>
+  	<h2> Before you click, For button 1, think of a common breakfast food. For button 2, think of a common lunch food. For button 3, think of a common Dinner. Let's see if we thought of the same foods.</h2>
+
+  	<button onclick="button1()">Button 1</button>
+  	<button onclick="button2()">Button 2</button>
+  	<button onclick="button3()">Button 3</button>
+
+  	<div class="assessment">
+  		<h3>Assessment</h3>
+
+  		<div id="content">
+
+ <p>Eggs are a common breakfast, but I commonly think of pancakes first:</p><img src='pancakes.jpg' class='imgSize'>
+
+<p>Fun Fact, this is a vegan pizza:</p><img scr='pizza.jpg' class='imgSize'>
+
+<p>Soup is cozy:</p><img scr='soup.jpg' class='imgSize'> 
+
+  		</div>
+  	</div>
+
+  </body>
+
+ </html>
