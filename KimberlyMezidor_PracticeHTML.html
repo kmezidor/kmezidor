@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tag -->
+		<meta charset="utf-8">
+
+		<script>
+
+			var myFirstVariable = 8;
+
+			function button1() {
+
+				html = "<p>Ok then. Jumping straight to extreme comfort zone. Your spirit animal is:<img src='sloth.jpg'>";
+
+				document.getElementById("content").innerHTML ='change to my new content';
+			}
+
+			function button2() {
+				
+				document.getElementById("content").innerHTML = 'new content';
+
+			}
+
+
+	</script>
+
+	<style>
+		.assessment {
+			background: red;
+		}
+		#content {
+			background: grey;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<h1>Spirit Animal Quiz</h1>
+
+	<button onclick="button1()">Button 1</button>
+	<button onclick="button2()">Button 2</button>
+	<button>Button 3</button>
+
+	<div class="assessment">
+		<h3>Assessment</h3>
+		content goes here
+	</div>
+
+</body>
+
+</html>

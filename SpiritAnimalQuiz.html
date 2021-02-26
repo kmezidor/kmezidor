@@ -6,24 +6,37 @@
 
     	<script>
 
+    var myFirstVariable = 8;
+
 	function myFirstFunction() {
 
+		document.gelElementById("content").innerHTML = 'change to my new content';
 
-    		}
 
-    	alert('hello');
-    	
+    	}
+
+
     	</script>
+  
+  <style>
 
-   
+  #content {
+		background: grey;
+
+  }
+  <style>
    </head>
 
    <body>
    		<h1>Spirit Animal Quiz</h1>
 
-   		<button onClick="">Button 1</button>
+   		<button onClick="myFirstFunction()">Button 1</button>
    		<button>Button 2</button>
    		<button>Button 3</button>
+
+   		<div id="content">
+
+   		</div>
 
    </body>
 
