@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <title>Template</title>
+
+    <style>
+
+    	body {
+    		background-color: black;
+    	}
+
+
+    </style>
+
+    <script>
+
+    	var myFirstVariable = "valuehere";
+
+    	var myFirstArray = ["apple", "orange", "3"];
+
+    	var mySecondArray = [1, 2, 3];
+
+
+		var colors = ["#1CB8C7", "#418D94", "#0AFA89", "#FA9097", "#C71C7D"];
+
+    	function moodChange() {
+    		buttonVal = document.getElementById("moodButton");
+
+    		if(buttonVal.value == 0) {
+    			document.body.style.backgroundColor = colors[0];
+    			buttonVal.value = 1;
+    		}
+    		else if (buttonVal.value == 1) {
+    			document.body.style.backgroundColor = colors[1];
+    			buttonVal.value = 2;
+    		}
+    		else {
+    			document.body.style.backgroundColor = colors[2];
+    			buttonVal.value = 0;
+    		}
+
+    	}
+
+    	function moodChange2() {
+    		var buttonVal = document.getElementById("moodButton");
+    		var value = buttonVal.value;
+
+    		switch(value) {
+    			case "0":
+    				document.body.style.backgroundColor = colors[0];
+    				buttonVal.value = "1";
+    				break;
+    			case "1":
+    				document.body.style.backgroundColor = colors[1];
+    				buttonVal.value = "2";
+    				break;
+    			case "2":
+    				document.body.style.backgroundColor = colors[2];
+    				buttonVal.value = "3";
+    				break;
+    			case "3":
+    				document.body.style.backgroundColor = colors[3];
+    				buttonVal.value = "0";
+    				break;
+    			case "4":
+    				document.body.style.backgroundColor = colors[4];
+    				buttonVal.value = "0";
+    				break;
+    			default:
+    				document.body.style.backgroundColor = "black";
+    		}
+
+    	}
+
+
+	</script>
+
+  </head>
+
+  <body>
+
+  	<button id="moodButton" value=0 onclick="moodChange2()">Change mood</button>
+
+  </body>
+
+ </html> 
