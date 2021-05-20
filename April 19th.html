@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	 <!-- Required meta tag -->
+	 <meta charset="utf-8">
+
+	 <title>Review Objects</title>
+
+	 <script>
+
+	 	var album = {
+	 		artist: 'Queen',
+	 		length: 70,
+	 		genre: 'Rock'
+	 		playSong: function() {
+	 			alert('play song');
+	 		}
+	 	}
+
+	 	function createAlbum(artist, length, genre) {
+	 		this.artist = artist, 
+	 		this.length = length,
+	 		this.genre = genre,
+	 		this.playSong = function () {
+	 			alert(this.artist + 'is awesome');
+	 		}
+	 	}
+
+	 	var album1 = new createAlbum('Perfume Genius', 45, 'Alt Pop');
+	 	console.log(album1);
+
+	 	var pageDocument = document;
+	 	console.log(pageDocument);
+
+	 	var button = document.getElementById('aButton');
+	 	console.log(button);
+
+	</script>
+
+	 </head>
+
+	 <body>
+
+	 	<button id="aButton"> A button</button> 
+
+
+	 </body>
+
+	 </html>

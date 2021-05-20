@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <title>Reading Facial Expressions with Masks Quiz</title>
+
+
+    <script>
+
+      var myFirstVariable = 8;
+
+      function button1() {
+
+        html = "<p>Which Person is Smiling?</p><img src='Facial Expression Quiz 1.jpeg' class='imgSize'>";
+
+
+
+        document.getElementById("content").innerHTML = html;
+
+      }
+
+
+      function button2() {
+
+        html = "<p>Which Person is Frowning?</p><img src='Facial Expressions Quiz 4.jpeg'>";
+        
+        document.getElementById("content").innerHTML = html;
+
+      }
+
+      function button3() {
+
+        html = "<p>Which Person is Angry?</p><img src='Facial Expression Quiz 3.jpeg'>";
+
+        document.getElementById("content").innerHTML = html;
+
+      }
+
+      
+
+
+    </script> 
+
+    <style>
+      .assessment {
+        background: pink;
+      }
+      #content {
+        background: turquoise;
+      }
+
+      .imgSize {
+        width: 50%;
+        height: 50%;
+      }
+
+
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1>Reading Facial Expressions with Masks Quiz</h1>
+    <h2> Are you able to read facial expression with masks? If you get 6 out of 10 you're great at reading facial expressions</h2>
+
+<!--    <button onclick="button1()">Button 1</button>
+    <button onclick="button2()">Button 2</button>
+    <button onclick="button3()">Button 3</button> -->
+    <button id="moodButton" value=0 onclick="button1()">A</button>
+    <button id="moodButton" value=0 onclick="button2()">B</button>
+    <button id="moodButton" value=0 onclick="button3()">C</button>
+    <button id="moodButton" value=0 onclick="button4()">D</button>
+
+    <div class="assessment">
+      <h3>Questions</h3>
+
+      <div id="content">
+
+ <p>5-Ingredient Peanut Butter Chocolate Chip Cookie:</p><img src='Facial Expression Quiz 1.jpeg' class='imgSize'>
+
+<p>No-Bake Sweet Salty Energy Bites:</p><img scr='Facial Expressions Quiz 4.jpeg' class='imgSize'>
+
+<p>5 Ingredient Mexican Quinoa Stuffed Peppers:</p><img scr='Facial Expression Quiz 3.jpeg' class='imgSize'> 
+
+      </div>
+    </div>
+
+  </body>
+
+ </html>
